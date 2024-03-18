@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FE02789-AD81-4821-8D24-978F71626E5D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QL_BANSACH</RootNamespace>
+    <AssemblyName>QL_BANSACH</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChiTietDonDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietDonDat.Designer.cs">
+      <DependentUpon>ChiTietDonDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKy.Designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatSach.Designer.cs">
+      <DependentUpon>DatSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonDatQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonDatQL.Designer.cs">
+      <DependentUpon>DonDatQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPwd.Designer.cs">
+      <DependentUpon>ForgetPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="MenuKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuKH.Designer.cs">
+      <DependentUpon>MenuKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuQL.Designer.cs">
+      <DependentUpon>MenuQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderHistory.Designer.cs">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyNV.Designer.cs">
+      <DependentUpon>QuanLyNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLySach.Designer.cs">
+      <DependentUpon>QuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThongTinDonDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinDonDat.Designer.cs">
+      <DependentUpon>ThongTinDonDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTKH.Designer.cs">
+      <DependentUpon>TTKH.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChiTietDonDat.resx">
+      <DependentUpon>ChiTietDonDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatSach.resx">
+      <DependentUpon>DatSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonDatQL.resx">
+      <DependentUpon>DonDatQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPwd.resx">
+      <DependentUpon>ForgetPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuKH.resx">
+      <DependentUpon>MenuKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuQL.resx">
+      <DependentUpon>MenuQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderHistory.resx">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyNV.resx">
+      <DependentUpon>QuanLyNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLySach.resx">
+      <DependentUpon>QuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ThongTinDonDat.resx">
+      <DependentUpon>ThongTinDonDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTKH.resx">
+      <DependentUpon>TTKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
